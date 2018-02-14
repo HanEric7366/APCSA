@@ -9,7 +9,8 @@ import static java.lang.System.*;
 public class Name
 {
 	private String name;
-	String [] ar;
+	private String [] ar;
+	private int i;
 	
 	public Name()
 	{
@@ -28,14 +29,28 @@ public class Name
 
 	public String getFirst()
 	{
-		ar = name.split(" ");
-		return ar[0];
+		//ar = name.split(" ");
+		//return ar[0];
+		i = 0;
+		while(i<name.length()){
+			if(name.charAt(i)==' ')
+				break;
+			else i++;
+		}
+		return name.substring(0,i);
 	}
 
 	public String getLast()
 	{
-		ar = name.split(" ");
-		return ar[1];
+		//ar = name.split(" ");
+		//return ar[1];
+		i = 0;
+		while(i<name.length()){
+			if(name.charAt(i)==' ')
+				break;
+			else i++;
+		}
+		return name.substring(i+1);
 	}
 
  	public String toString()

@@ -3,8 +3,6 @@
 //Date -
 //Class -
 //Lab  -
-import java.util.Scanner;
-import java.util.scanner;
 
 public class Circle
 {

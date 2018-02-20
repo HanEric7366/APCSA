@@ -16,7 +16,6 @@ public class Lab08i
 		out.print("Enter a number :: ");
 		int numero = keyboard.nextInt();
 		Prime test = new Prime(numero);
-		test.setPrime(numero);
 		System.out.println(test.toString());
 
 	}	

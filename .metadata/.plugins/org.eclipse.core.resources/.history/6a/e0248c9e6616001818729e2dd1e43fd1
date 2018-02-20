@@ -13,10 +13,9 @@ public class Lab08i
 	public static void main ( String[] args )
 	{
 		Scanner keyboard = new Scanner(System.in);
-		out.print("Enter a number :: ");
+		out.print("Enter a letter :: ");
 		int numero = keyboard.nextInt();
 		Prime test = new Prime(numero);
-		test.setPrime(numero);
 		System.out.println(test.toString());
 
 	}	

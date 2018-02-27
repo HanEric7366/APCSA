@@ -5,7 +5,6 @@
 //Lab  -
 
 import static java.lang.System.*;
-import java.lang.Math;
 
 public class Prime
 {

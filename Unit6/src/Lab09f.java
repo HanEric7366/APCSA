@@ -4,7 +4,7 @@
 //Class -
 //Lab  -
 
-import static java.lang.System;
+import java.lang.System;
 import java.util.Scanner;
 
 public class Lab09f

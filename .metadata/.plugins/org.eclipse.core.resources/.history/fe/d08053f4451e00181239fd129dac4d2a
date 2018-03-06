@@ -1,0 +1,54 @@
+package idontknow;
+// "Name it whatever you want." -Mr. Mauro
+public class WhateverYouWant {
+	
+	public static boolean isGoofy(int num)
+	{
+		int numberLength = getNumberLength(num);
+		for(int i=0;i<numberLength;i++){
+			int c = powerten(i+1);
+			int targetDigit = eliminate(num,c);
+			if(targetDigit>
+		}
+	}
+	
+	public static void main(String[] args){
+		System.out.print("hi");
+	}
+	
+	public static int getNumberLength(int b){
+		int numleng = 0;
+		int tenpower = 1;
+		for(int i=0;i>0;i--){
+			int a=0;
+			for(int j=0;j<i;j++){
+				tenpower = tenpower*10;
+			}
+			if(b>tenpower){
+				numleng++;
+			}
+		}
+		return numleng;
+	}
+	
+	public static int powerten(int d){
+		int tens = 1;
+		for(int wow=0;wow<d;wow++){
+			tens=tens*10;
+		}
+		return tens;
+	}
+	
+	public static int quickmods(int e, int f){
+		int target = e%f;
+		return target;
+	}
+	
+	public static int eliminatelast(int g){
+		int oops = 0;
+		int aiya = g%10;
+		oops -= aiya;
+		oops = oops/10;
+		return oops;
+	}
+}

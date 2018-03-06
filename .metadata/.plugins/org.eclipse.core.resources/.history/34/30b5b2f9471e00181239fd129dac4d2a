@@ -1,0 +1,60 @@
+package idontknow;
+// "Name it whatever you want." -Mr. Mauro
+public class WhateverYouWant {
+	
+	public static boolean isGoofy(int num)
+	{
+		int toyNum=num;
+		int numberLength = getNumberLength(num);
+		for(int i=0;i<numberLength;i++){
+			int a = lastDigit(num);
+			if(num%a==0){
+				return true;
+			}
+			toyNum = eliminateLast(toyNum);
+		}
+		return false;
+	}
+	
+	public static void main(String[] args){
+		System.out.print(isGoofy(2222));
+	}
+	
+	public static int getNumberLength(int b){
+		int numleng = 0;
+		int tenpower = 1;
+		for(int i=0;true;i++){
+			for(int j=0;j<i;j++){
+				tenpower = tenpower*10;
+			}
+			if(b>tenpower){
+				numleng++;
+			}
+			else{
+				break;
+			}
+		}
+		return numleng;
+	}
+	
+	public static int powerTen(int d){
+		int tens = 1;
+		for(int wow=0;wow<d;wow++){
+			tens=tens*10;
+		}
+		return tens;
+	}
+	
+	public static int lastDigit(int e){
+		int target = e%10;
+		return target;
+	}
+	
+	public static int eliminateLast(int g){
+		int oops = 0;
+		int aiya = g%10;
+		oops -= aiya;
+		oops = oops/10;
+		return oops;
+	}
+}
